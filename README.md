@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NexaCore — Company Portfolio Website
+
+A professional, production-grade company portfolio built with **Next.js 14 App Router**, **Tailwind CSS**, **Framer Motion**, and **Lucide React**. Dark-themed, fully responsive, and Vercel/Netlify-ready.
+
+---
+
+## Tech Stack
+
+| Layer | Tech |
+|-------|------|
+| Framework | Next.js 14 (App Router) |
+| Styling | Tailwind CSS |
+| Animations | Framer Motion (scroll-triggered fade + slide-up) |
+| Icons | Lucide React |
+| Fonts | Space Grotesk (display) + DM Sans (body) |
+| Data | Local TypeScript constants in `/data` |
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Editing Site Content
 
-## Learn More
+All content lives in the `/data` folder — no backend required.
 
-To learn more about Next.js, take a look at the following resources:
+| File | What it controls |
+|------|-----------------|
+| `data/company.ts` | Company name, tagline, description, mission, social links |
+| `data/achievements.ts` | Achievement cards and detail pages |
+| `data/projects.ts` | Project cards and detail pages |
+| `data/team.ts` | Team member cards |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Simply edit the arrays in these files — the UI updates automatically.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+/app
+  /achievements/[slug]/page.tsx   — Achievement detail page
+  /projects/[slug]/page.tsx       — Project detail page
+  page.tsx                        — Home page
+  layout.tsx                      — Root layout + fonts
+/components
+  Navbar.tsx
+  Hero.tsx
+  WhoWeAre.tsx
+  Achievements.tsx / AchievementCard.tsx
+  Projects.tsx / ProjectCard.tsx
+  Team.tsx / TeamCard.tsx
+  Footer.tsx
+  ScrollReveal.tsx                — Reusable scroll animation wrapper
+/data
+  company.ts
+  achievements.ts
+  projects.ts
+  team.ts
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Deploy to Vercel (One-Click)
+
+1. Push this repository to GitHub.
+2. Go to [vercel.com/new](https://vercel.com/new) and import the repo.
+3. Vercel auto-detects Next.js — click **Deploy**.
+
+No environment variables are required for the base portfolio. See `.env.example` if you add integrations later.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+---
+
+## Deploy to Netlify
+
+1. Push this repository to GitHub.
+2. Go to [app.netlify.com](https://app.netlify.com) → **Add new site** → **Import an existing project**.
+3. Set build command: `npm run build`, publish directory: `.next`.
+4. Install the [Netlify Next.js plugin](https://github.com/netlify/netlify-plugin-nextjs) for full SSR support.
