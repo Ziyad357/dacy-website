@@ -40,7 +40,7 @@ Current alternatives are mostly limited to white canes and basic reading devices
     githubUrl: "",
     demoUrl: "",
     presentationUrl: "",
-    images: [],
+    images: ["/images/logos/glass.png"],
   },
   {
     id: "2",
