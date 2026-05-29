@@ -69,7 +69,7 @@ The Project belongs to Ziyad Ahmadzada`,
     githubUrl: "https://github.com/Ziyad357/accessbank-agent",
     demoUrl: "",
     presentationUrl: "",
-    images: ["/images/logos/ai.png"],
+    images: ["/images/logos/call.png"],
   },
   {
     id: "3",
