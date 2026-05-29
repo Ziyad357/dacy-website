@@ -79,7 +79,7 @@ The system performs statistical analysis to help improve service quality over ti
     githubUrl: "https://github.com/Ziyad357/dacy_rent_a_car",
     demoUrl: "",
     presentationUrl: "",
-    images: [],
+    images: ["/images/logos/rentacar.png"],
   },
   {
     id: "4",
