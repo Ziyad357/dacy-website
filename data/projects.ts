@@ -110,7 +110,7 @@ The Project belongs to Orkhan Yusifli`,
     githubUrl: "",
     demoUrl: "",
     presentationUrl: "",
-    images: ["/images/logos/bizsim.png"],
+    images: ["/images/logos/Bizsim.png"],
     investor: "Xmind",
   },
 ];
