@@ -21,20 +21,22 @@ export default function AchievementCard({ achievement }: AchievementCardProps) {
   return (
     <Link href={`/achievements/${achievement.slug}`} className="group block">
       <article className="relative h-full rounded-2xl border border-border bg-surface-2 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col">
-        {/* Large logo area */}
-        <div className="flex items-center justify-center h-[200px] bg-surface px-6 border-b border-border">
+        {/* Logo container: white bg, rounded-xl, 200px height, padding 20px */}
+        <div className="flex items-center justify-center h-[200px] bg-white dark:bg-gray-900 rounded-xl mx-4 mt-4 px-5 border-b border-gray-200 dark:border-gray-700">
           {hasLogo ? (
             <img
               src={achievement.logoUrl}
               alt={`${achievement.title} logo`}
-              style={{ maxHeight: "180px", objectFit: "contain", maxWidth: "100%" }}
+              style={{ maxHeight: "160px", maxWidth: "90%", objectFit: "contain" }}
               className="transition-transform duration-500 group-hover:scale-105"
               onError={() => setLogoError(true)}
             />
           ) : (
-            <span className="px-6 py-3 rounded-full border-2 border-accent/40 bg-accent/5 text-accent text-base font-bold text-center leading-tight max-w-[280px]">
-              {achievement.title}
-            </span>
+            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl">
+              <span className="text-white font-display font-bold text-xl text-center px-4 leading-tight">
+                {achievement.title}
+              </span>
+            </div>
           )}
         </div>
 
