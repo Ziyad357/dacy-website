@@ -65,7 +65,7 @@ The system performs statistical analysis to help improve service quality over ti
     githubUrl: "https://github.com/Ziyad357/accessbank-agent",
     demoUrl: "",
     presentationUrl: "",
-    images: [],
+    images: ["/images/logos/ai.png"],
   },
   {
     id: "3",
