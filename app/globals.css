@@ -8,7 +8,7 @@
   --font-dm-sans: "DM Sans", sans-serif;
 }
 
-/* ── Light mode (default) ────────────────────────────── */
+/* ── Light mode only ───────────────────────────────────── */
 :root {
   --color-bg:         255 255 255;
   --color-surface:    240 249 255;   /* sky-50 #F0F9FF */
@@ -18,18 +18,6 @@
   --color-accent-dim: 7 89 133;      /* sky-700 #075985 */
   --color-text:       10 10 25;
   --color-muted:      71 85 105;     /* slate-600 */
-}
-
-/* ── Dark mode ───────────────────────────────────────── */
-.dark {
-  --color-bg:         8 8 15;
-  --color-surface:    15 15 26;
-  --color-surface-2:  22 22 37;
-  --color-border:     30 30 50;
-  --color-accent:     56 189 248;    /* sky-400 #38BDF8 */
-  --color-accent-dim: 14 165 233;    /* sky-500 #0EA5E3 */
-  --color-text:       232 232 240;
-  --color-muted:      107 107 138;
 }
 
 /* ── Base ────────────────────────────────────────────── */

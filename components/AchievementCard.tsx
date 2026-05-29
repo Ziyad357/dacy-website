@@ -22,7 +22,7 @@ export default function AchievementCard({ achievement }: AchievementCardProps) {
     <Link href={`/achievements/${achievement.slug}`} className="group block">
       <article className="relative h-full rounded-2xl border border-border bg-surface-2 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col">
         {/* Logo container: white bg, rounded-xl, 200px height, padding 20px */}
-        <div className="flex items-center justify-center h-[200px] bg-white dark:bg-gray-900 rounded-xl mx-4 mt-4 px-5 border-b border-gray-200 dark:border-gray-700">
+        <div className="flex items-center justify-center h-[200px] bg-white rounded-xl mx-4 mt-4 px-5 border-b border-gray-200">
           {hasLogo ? (
             <img
               src={achievement.logoUrl}

@@ -3,16 +3,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Zap, Sun, Moon } from "lucide-react";
+import { Menu, X, Zap } from "lucide-react";
 import { company } from "@/data/company";
-import { useTheme } from "./ThemeProvider";
 import { useLanguage } from "@/context/LanguageContext";
 import { t } from "@/data/translations";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const { theme, toggle } = useTheme();
   const { lang, setLang } = useLanguage();
   const tr = t[lang];
 
@@ -85,13 +83,6 @@ export default function Navbar() {
               </button>
             ))}
           </div>
-          <button
-            onClick={toggle}
-            aria-label="Toggle theme"
-            className="w-8 h-8 flex items-center justify-center rounded-lg border border-border text-muted hover:text-text hover:border-accent/40 transition-all"
-          >
-            {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
-          </button>
           <a
             href={company.linkedin}
             target="_blank"
@@ -119,13 +110,6 @@ export default function Navbar() {
               </button>
             ))}
           </div>
-          <button
-            onClick={toggle}
-            aria-label="Toggle theme"
-            className="w-8 h-8 flex items-center justify-center rounded-lg border border-border text-muted hover:text-text transition-all"
-          >
-            {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
-          </button>
           <button
             className="text-muted hover:text-text transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}

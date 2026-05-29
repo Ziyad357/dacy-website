@@ -38,7 +38,7 @@ export default function Footer() {
     <footer className="border-t border-border">
       {/* ── Prominent quote block ─────────────────────────── */}
       <div
-        className="w-full py-12 px-6 text-center bg-[#EFF6FF] dark:bg-[rgba(56,189,248,0.07)]"
+        className="w-full py-12 px-6 text-center bg-[#EFF6FF]"
       >
         <div
           className="font-display font-bold text-7xl md:text-8xl leading-none text-accent/20 select-none mb-2"
