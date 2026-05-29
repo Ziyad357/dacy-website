@@ -20,7 +20,7 @@ export const achievements: Achievement[] = [
     fullDescription:
       "DaCy participated in TEKNOFEST 2025, one of the world's largest technology competitions held in Turkey. Our team presented an AI-integrated project and competed among hundreds of teams from across the region. TEKNOFEST brings together the brightest young minds in technology, aerospace, and innovation.",
     // Place logo images here: teknofest.png, idealise.png, amcham.png, accessbank.png
-    logoUrl: "/images/logos/teknofest.png",
+    logoUrl: "/images/logos/Tekno logo.png",
     impact:
       "International recognition at one of the world's largest tech competitions.",
   },
