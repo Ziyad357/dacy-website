@@ -34,7 +34,7 @@ export const team: TeamMember[] = [
     name: "Oruc Safarzada",
     role: "Co-Founder / Security & IT Expert",
     bio: "Cybersecurity and IT infrastructure specialist ensuring robust and secure systems.",
-    photo: "",
+    photo: "/images/team/oruc.jpg",
     linkedin: "https://www.linkedin.com/in/oruc-seferzade/",
   },
 ];
