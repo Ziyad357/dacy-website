@@ -33,7 +33,7 @@ export const achievements: Achievement[] = [
       "Selected at the first round of Idealise 2026 innovation competition.",
     fullDescription:
       "Idealise is a prestigious Azerbaijani innovation and startup competition organized under ADNSU. DaCy was selected among top teams in the first round of Idealise 2026, showcasing our AI-powered solutions to a panel of investors and industry experts.",
-    logoUrl: "/images/logos/idealise.png",
+    logoUrl: "/images/logos/Idealise.png",
     impact:
       "Recognition among top startups at Azerbaijan's leading innovation platform.",
   },
@@ -45,7 +45,7 @@ export const achievements: Achievement[] = [
     shortDescription: "Advanced to the second round of Idealise 2026.",
     fullDescription:
       "Following success in the first round, DaCy advanced to the second stage of Idealise 2026, continuing to present and refine our AI-integrated projects before a wider audience of stakeholders and investors.",
-    logoUrl: "/images/logos/idealise.png",
+    logoUrl: "/images/logos/Idealise.png",
     impact:
       "Continued advancement demonstrating product maturity and team execution.",
   },
