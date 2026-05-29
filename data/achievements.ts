@@ -71,7 +71,7 @@ export const achievements: Achievement[] = [
       "Built an AI-powered call center solution at Access Bank's hackathon.",
     fullDescription:
       "At the Access Bank Hackathon, DaCy developed an AI-driven call center and customer request management system with voice-to-text, emotion analysis, automatic routing, and a Telegram bot — all built and presented during the competition.",
-    logoUrl: "/images/logos/accessbank.jpg",
+    logoUrl: "/images/logos/accessbank-azerbaijan-logo.png",
     impact:
       "Demonstrated real-world fintech AI application in a competitive banking environment.",
   },
