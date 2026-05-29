@@ -27,7 +27,9 @@ In the next phase, this system will be integrated into smart glasses. Cameras an
 
 The integrated mobile app will also allow parents and family members to track the user and provide support in emergencies.
 
-Current alternatives are mostly limited to white canes and basic reading devices. Our solution is an AI-powered smart glasses system built on artificial intelligence, sensor technology, computer vision, and GPS. It provides the user with real-time information about their location, direction, obstacles, and approaching people through earphones. Additionally, family members can track the user via mobile app and offer support in emergencies — a major advantage over existing alternatives in both safety and social integration.`,
+Current alternatives are mostly limited to white canes and basic reading devices. Our solution is an AI-powered smart glasses system built on artificial intelligence, sensor technology, computer vision, and GPS. It provides the user with real-time information about their location, direction, obstacles, and approaching people through earphones. Additionally, family members can track the user via mobile app and offer support in emergencies — a major advantage over existing alternatives in both safety and social integration. 
+
+The Project belongs to Ziyad Ahmadzada`,
     techStack: [
       "Computer Vision",
       "Python",
@@ -52,7 +54,9 @@ Current alternatives are mostly limited to white canes and basic reading devices
 
 Through the operator panel, all requests are tracked, prioritized, and managed. Critical and negatively emotional requests are automatically highlighted by the system. The project also includes a Telegram notification and daily report feature.
 
-The system performs statistical analysis to help improve service quality over time. The platform has a modern, scalable architecture that can be integrated with mobile applications.`,
+The system performs statistical analysis to help improve service quality over time. The platform has a modern, scalable architecture that can be integrated with mobile applications.
+
+The Project belongs to Ziyad Ahmadzada`,
     techStack: [
       "Python",
       "FastAPI",
@@ -72,7 +76,8 @@ The system performs statistical analysis to help improve service quality over ti
     slug: "rent-a-car",
     title: "Rent A Car System",
     shortDescription:
-      "A full-stack car rental management platform built for modern rental businesses.",
+      "A full-stack car rental management platform built for modern rental businesses. The Project belongs to Ziyad Ahmadzada",
+
     fullDescription:
       "DaCy's Rent A Car system is a comprehensive car rental management platform. It enables businesses to manage their vehicle fleet, handle customer bookings, track rentals, and streamline operations through a clean and modern interface.",
     techStack: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "Node.js"],
@@ -91,7 +96,9 @@ The system performs statistical analysis to help improve service quality over ti
 
 Users manage all aspects of a simulated business — from pricing and production to marketing and financial planning — while competing against AI-driven market forces. The AI engine adapts to user decisions, creating dynamic and unpredictable market scenarios that mirror real-world business challenges.
 
-BizSim is backed by Xmind, a leading technology company, which serves as the platform's investor — validating the product's commercial potential and technical foundation.`,
+BizSim is backed by Xmind, a leading technology company, which serves as the platform's investor — validating the product's commercial potential and technical foundation.
+
+The Project belongs to Orkhan Yusifli`,
     techStack: [
       "React",
       "Node.js",
@@ -103,7 +110,7 @@ BizSim is backed by Xmind, a leading technology company, which serves as the pla
     githubUrl: "",
     demoUrl: "",
     presentationUrl: "",
-    images: [],
+    images: ["/images/logos/bizsim.png"],
     investor: "Xmind",
   },
 ];
