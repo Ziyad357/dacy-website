@@ -16,7 +16,7 @@ export const team: TeamMember[] = [
     name: "Ziyad Ahmadzada",
     role: "Founder",
     bio: "Founder of DaCy. Data analyst, entrepreneur, and AI enthusiast driving the company's vision.",
-    photo: "/images/team/ziyad.JPEG",
+    photo: "/images/team/ziyad.jpg",
     linkedin: "https://www.linkedin.com/in/ziyadahmadzada",
   },
   {
@@ -25,7 +25,7 @@ export const team: TeamMember[] = [
     name: "Orkhan Yusifli",
     role: "CEO / AI Engineer",
     bio: "AI Engineer specializing in machine learning, NLP, and intelligent system design.",
-    photo: "",
+    photo: "/images/team/orxan.jpg",
     linkedin: "https://www.linkedin.com/in/orkhanyusifli/",
   },
   {
