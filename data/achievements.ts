@@ -58,7 +58,7 @@ export const achievements: Achievement[] = [
       "Participated in the American Chamber of Commerce Azerbaijan hackathon.",
     fullDescription:
       "DaCy competed in the AmCham Azerbaijan Hackathon, a business and technology challenge organized by the American Chamber of Commerce. Our team developed and presented an innovative AI solution within the competition timeframe.",
-    logoUrl: "/images/logos/amcham.png",
+    logoUrl: "/images/logos/Amcham.png",
     impact:
       "Exposure to international business community and networking with global companies.",
   },
@@ -71,7 +71,7 @@ export const achievements: Achievement[] = [
       "Built an AI-powered call center solution at Access Bank's hackathon.",
     fullDescription:
       "At the Access Bank Hackathon, DaCy developed an AI-driven call center and customer request management system with voice-to-text, emotion analysis, automatic routing, and a Telegram bot — all built and presented during the competition.",
-    logoUrl: "/images/logos/accessbank.png",
+    logoUrl: "/images/logos/accessbank.jpg",
     impact:
       "Demonstrated real-world fintech AI application in a competitive banking environment.",
   },
