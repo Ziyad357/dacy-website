@@ -23,10 +23,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const { lang } = useLanguage();
   const tr = t[lang];
 
+  const initials = project.title
+    .split(" ")
+    .map((n) => n.charAt(0))
+    .join("")
+    .toUpperCase()
+    .slice(0, 2);
+
   return (
-    <article className="group relative h-full rounded-2xl border border-border bg-surface-2 overflow-hidden card-hover flex flex-col">
-      {project.images && project.images[0] && (
-        <div className="relative h-48 overflow-hidden flex-shrink-0">
+    <article className="group relative h-full rounded-2xl border border-border bg-surface-2 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col">
+      {/* Large image area */}
+      {project.images && project.images[0] ? (
+        <div className="relative h-[200px] overflow-hidden flex-shrink-0 border-b border-border">
           <Image
             src={project.images[0]}
             alt={project.title}
@@ -34,16 +42,21 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-surface-2 via-surface-2/20 to-transparent" />
+        </div>
+      ) : (
+        <div className="h-[200px] bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center border-b border-border">
+          <span className="text-accent font-display font-bold text-5xl">
+            {initials}
+          </span>
         </div>
       )}
 
       <div className="p-6 flex flex-col flex-1">
-        <h3 className="font-display font-semibold text-lg text-text mb-2 group-hover:text-accent transition-colors">
+        <h3 className="font-display font-bold text-lg text-text mb-2 group-hover:text-accent transition-colors">
           {project.title}
         </h3>
 
-        <p className="text-muted text-sm leading-relaxed mb-4 flex-1 line-clamp-3">
+        <p className="text-muted text-sm leading-relaxed mb-4 line-clamp-3 flex-1">
           {project.shortDescription}
         </p>
 
@@ -63,7 +76,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           )}
         </div>
 
-        <div className="flex items-center justify-between border-t border-border pt-4">
+        <div className="flex items-center justify-between border-t border-border pt-4 mt-auto">
           <Link
             href={`/projects/${project.slug}`}
             className="flex items-center gap-1.5 text-accent text-xs font-medium hover:gap-2.5 transition-all"

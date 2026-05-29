@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
 import { TeamMember } from "@/data/team";
 
 function GithubIcon({ size = 14 }: { size?: number }) {
@@ -25,37 +24,42 @@ interface TeamCardProps {
 }
 
 export default function TeamCard({ member }: TeamCardProps) {
-  return (
-    <article className="group relative rounded-2xl border border-border bg-surface-2 overflow-hidden card-hover p-6">
-      <div className="flex items-start gap-4 mb-4">
-        <div className="relative flex-shrink-0">
-          {member.photo ? (
-            <div className="relative w-14 h-14 rounded-xl overflow-hidden border-2 border-border group-hover:border-accent/30 transition-colors">
-              <Image
-                src={member.photo}
-                alt={member.name}
-                fill
-                className="object-cover"
-                sizes="56px"
-              />
-            </div>
-          ) : (
-            <div className="w-14 h-14 rounded-xl bg-accent/10 border-2 border-accent/20 flex items-center justify-center text-accent font-display font-bold text-xl">
-              {member.name.charAt(0)}
-            </div>
-          )}
-          <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-accent border-2 border-surface-2" />
-        </div>
+  const initials = member.name
+    .split(" ")
+    .map((n) => n.charAt(0))
+    .join("")
+    .toUpperCase()
+    .slice(0, 2);
 
-        <div className="flex-1 min-w-0">
-          <h3 className="font-display font-semibold text-base text-text truncate">
-            {member.name}
-          </h3>
-          <p className="text-accent text-xs font-medium mt-0.5">{member.role}</p>
-        </div>
+  return (
+    <article className="group relative rounded-2xl border border-border bg-surface-2 overflow-hidden shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col items-center text-center">
+      {/* Circular photo at top */}
+      <div className="relative w-[150px] h-[150px] rounded-full overflow-hidden border-2 border-border group-hover:border-accent/30 transition-colors mb-5">
+        {member.photo ? (
+          <Image
+            src={member.photo}
+            alt={member.name}
+            fill
+            className="object-cover"
+            sizes="150px"
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+            <span className="text-accent font-display font-bold text-4xl">
+              {initials}
+            </span>
+          </div>
+        )}
       </div>
 
-      <div className="flex items-center gap-2 border-t border-border pt-4">
+      {/* Name and role */}
+      <h3 className="font-display font-bold text-xl text-text mb-1">
+        {member.name}
+      </h3>
+      <p className="text-muted text-sm font-medium mb-5">{member.role}</p>
+
+      {/* Social links */}
+      <div className="flex items-center gap-3 mt-auto">
         {member.linkedin && (
           <a
             href={member.linkedin}
@@ -67,9 +71,6 @@ export default function TeamCard({ member }: TeamCardProps) {
             <LinkedinIcon size={13} />
             LinkedIn
           </a>
-        )}
-        {member.linkedin && member.github && (
-          <span className="text-border text-xs">·</span>
         )}
         {member.github && (
           <a
@@ -83,9 +84,6 @@ export default function TeamCard({ member }: TeamCardProps) {
             GitHub
           </a>
         )}
-        <div className="ml-auto">
-          <ExternalLink size={12} className="text-border group-hover:text-accent/40 transition-colors" />
-        </div>
       </div>
     </article>
   );
