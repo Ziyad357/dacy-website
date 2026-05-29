@@ -16,7 +16,7 @@ export const team: TeamMember[] = [
     name: "Ziyad Ahmadzada",
     role: "Founder",
     bio: "Founder of DaCy. Data analyst, entrepreneur, and AI enthusiast driving the company's vision.",
-    photo: "/images/team/ziyad.jpg",
+    photo: "/images/team/ziyad.png",
     linkedin: "https://www.linkedin.com/in/ziyadahmadzada",
   },
   {
